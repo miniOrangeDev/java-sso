@@ -1,12 +1,13 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>com.miniorange.app</groupId>
+  <groupId>com.miniorange</groupId>
   <artifactId>sso</artifactId>
   <packaging>jar</packaging>
-  <version>0.0.1-SNAPSHOT</version>
-  <name>sso Maven Webapp</name>
-  <url>http://maven.apache.org</url>
+  <version>1.0.0</version>
+  <name>Java SAML Single Sign-on</name>
+  <description>miniOrange Java SAML Single Sign On (SSO) Connector acts as a SAML Service Provider which can be configured to establish the trust between the SSO connector and a SAML capable Identity Provider to securely authenticate the users into your application. The SSO connector uses the SAML protocol for exchanging authentication and authorization data with the Identity Provider.</description>
+  <url>https://github.com/miniOrangeDev/java-sso</url>
   <dependencies>
     <dependency>
     	<groupId>javax.servlet</groupId>
@@ -71,7 +72,7 @@
   <properties>
     <maven.compiler.source>1.7</maven.compiler.source>
     <maven.compiler.target>1.7</maven.compiler.target>
-</properties>
+  </properties>
   <build>
     <finalName>sso</finalName>
     <plugins>
@@ -95,4 +96,23 @@
     	</plugin>
     </plugins>
   </build>
+  <licenses>
+	  <license>
+	    <name>MIT License</name>
+	    <url>http://www.opensource.org/licenses/mit-license.php</url>
+	  </license>
+  </licenses>
+  <developers>
+    <developer>
+      <name>miniOrange</name>
+      <email>info@xecurify.com</email>
+      <organization>miniOrange</organization>
+      <organizationUrl>https://www.miniorange.com</organizationUrl>
+    </developer>
+  </developers>
+  <scm>
+	  <connection>scm:git:git://github.com/miniOrangeDev/java-sso.git</connection>
+	  <developerConnection>scm:git:ssh://github.com:miniOrangeDev/java-sso.git</developerConnection>
+	  <url>https://github.com/miniOrangeDev/java-sso</url>
+	</scm>
 </project>
