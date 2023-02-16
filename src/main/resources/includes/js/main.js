@@ -20,7 +20,9 @@ jQuery(document).ready(function(){
         jQuery("#logout_url_help_desc").slideToggle(400);
     });
     
-
+    jQuery("#mo_saml_goto_login").click(function () {
+        jQuery("#mo_saml_goto_login_form").submit();
+    });
 });
 
 $(function() {
@@ -47,6 +49,32 @@ $(function() {
             container.append(new_field_group);
         }
     );
+});
+//function enableTestingButton(){
+//if(document.getElementById('saml_form').submit){
+//document.getElementById('saml_form').disabled = false
+//}
+//}
+
+$(function () {
+    $(document).ready(function () {
+        var clicked = sessionStorage.getItem('clicked');
+        if (clicked == 'true') {
+            $('#testing').removeAttr('disabled');
+        } else {
+            $('#testing').attr('disabled', 'disabled');
+        }
+    });
+    $('#submit').on("click", function () {
+        sessionStorage.setItem('clicked', 'true');
+    });
+    $('#reset').on("click", function () {
+        sessionStorage.setItem('clicked', 'false');
+    });
+});
+
+$(".alert").delay(4000).slideUp(200, function() {
+    $(this).alert('close');
 });
 
 
