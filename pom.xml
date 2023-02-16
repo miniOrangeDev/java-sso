@@ -5,7 +5,7 @@
     <groupId>com.miniorange</groupId>
     <artifactId>sso</artifactId>
     <packaging>jar</packaging>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <name>Java SAML Single Sign-on</name>
     <description>miniOrange Java SAML Single Sign On (SSO) Connector acts as a SAML Service Provider which can be
         configured to establish the trust between the SSO connector and a SAML capable Identity Provider to securely
